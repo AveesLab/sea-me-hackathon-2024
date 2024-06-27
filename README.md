@@ -236,6 +236,7 @@ sudo chmod a+rw /dev/ttyACM0
 cd ~/catkin_ws/src/sea-me-hackathon-2024/ultrasonic_ros
 arduino ultrasonic_ros.ino
 ```
+![다운로드](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/ae8e9c9f-199f-4c23-8273-0b14bb9b94fd)
 
 >check the result
 ```
