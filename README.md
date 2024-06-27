@@ -158,3 +158,25 @@ rosrun joy joy_node
 ```
 rostopic echo /joy
 ```
+
+### usb_cam
+>```
+>sudo apt install ros-melodic-usb-cam
+>```
+
+## Step 6. OpenCV settings
+```
+sudo gedit /opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+```
+>In line 96
+```
+/usr/include/opencv -- 
+/usr/include/opencv4 ++
+```
+
+>In Ln119
+```
+*.so.3.2.0 --
+*.so.4.1.1 ++
+```
+
