@@ -180,3 +180,18 @@ sudo gedit /opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake
 ++ set(libraries "cv_bridge;/usr/lib/aarch64-linux-gnu/libopencv_core.so.4.1.1;/usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.1.1;/usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.4.1.1") 
 ```
 
+>check
+```
+cd ~/catkin_ws/src
+git clone -b main https://github.com/SeungWoo3/jetracer.git
+cd ../
+catkin_make
+```
+```
+roslaunch usb_cam usb_cam-test.launch
+rosrun lane_detect_image lane_detect_image_node
+rosrun control control.py
+rosrun control actuator.py
+rqt_graph
+```
+
