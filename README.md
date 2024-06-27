@@ -170,13 +170,13 @@ sudo gedit /opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake
 ```
 >In line 96
 ```
-/usr/include/opencv -- 
-/usr/include/opencv4 ++
+set(_include_dirs "include;/usr/include;/usr/include/opencv") -- 
+set(_include_dirs "include;/usr/include;/usr/include/opencv4") ++
 ```
 
 >In Ln119
 ```
-*.so.3.2.0 --
-*.so.4.1.1 ++
+set(libraries "cv_bridge;/usr/lib/aarch64-linux-gnu/libopencv_core.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.3.2.0;/usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.3.2.0") --
+set(libraries "cv_bridge;/usr/lib/aarch64-linux-gnu/libopencv_core.so.4.1.1;/usr/lib/aarch64-linux-gnu/libopencv_imgproc.so.4.1.1;/usr/lib/aarch64-linux-gnu/libopencv_imgcodecs.so.4.1.1") ++
 ```
 
