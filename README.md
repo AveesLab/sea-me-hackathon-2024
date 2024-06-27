@@ -31,6 +31,8 @@ Picture?
 Picture?
 ```
 
+#####ADD VNC remote control#####
+
 3. Connect WIFI
 
 4. Run the following commands on the terminal
