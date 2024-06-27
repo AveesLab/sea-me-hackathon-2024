@@ -160,9 +160,9 @@ rostopic echo /joy
 ```
 
 ### usb_cam
->```
->sudo apt install ros-melodic-usb-cam
->```
+```
+sudo apt install ros-melodic-usb-cam
+```
 
 ## Step 6. OpenCV settings
 ```
