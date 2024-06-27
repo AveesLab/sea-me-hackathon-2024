@@ -203,7 +203,7 @@ rqt_graph
 ## Step 7. Use arduino ultrasonic sensor
 1. install ros package
 ```
-sudo apt install ros-melodic-rosserial rosmelodic-rosserial-arduino
+sudo apt install ros-melodic-rosserial ros-melodic-rosserial-arduino
 ```
 2. download Arduino
    
