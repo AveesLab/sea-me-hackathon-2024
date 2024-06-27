@@ -9,12 +9,15 @@ https://www.waveshare.com/wiki/JetRacer_Pro_AI_Kit
 
 ## Step 1: Install Image
 1. Download the JetRacer image and unzip it.
- [https://drive.google.com/file/d/1ZBdqrwhW2n1uN8rughF7Puw98o76kUcH/view?usp=sharing](https://drive.google.com/file/d/1ZBdqrwhW2n1uN8rughF7Puw98o76kUcH/view?usp=sharing)
+
+[https://drive.google.com/file/d/1ZBdqrwhW2n1uN8rughF7Puw98o76kUcH/view?usp=sharing]
 
 2. Download Etcher.
+
 https://github.com/balena-io/etcher/releases/download/v1.19.21/balenaEtcher-1.19.21.Setup.exe
 
 3. Write the image using Etcher.
+
 ![image](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/27d577d6-3ba9-4511-930e-979d170aa077)
 
 ## Step 2: Initial setup
