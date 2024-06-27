@@ -231,6 +231,12 @@ sudo usermod -a -G dialout jetson
 sudo chmod a+rw /dev/ttyACM0
 ```
 
+>Install rosserial library
+```
+cd ~/catkin_ws/src/sea-me-hackathon-2024/ultrasonic_ros
+arduino ultrasonic_ros.ino
+```
+
 >check the result
 ```
 roscore
