@@ -56,4 +56,5 @@ sudo apt install gparted
 sudo gparted
 ```
 >Resize partition to maxsize
+
 ![3](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/1a451278-ae0e-4fa4-a956-d33571ff38c5)
