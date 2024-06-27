@@ -200,7 +200,7 @@ rqt_graph
 
 ![342594126-65fb5368-630e-4887-8a2c-032221f1ac13](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/391f9b84-990a-43b2-90fd-6a25fab95f3c)
 
-## Step 7. Use arduino ultrasonic sensor
+## Step 7. Use arduino ROS
 1. install ros package
 ```
 sudo apt install ros-melodic-rosserial ros-melodic-rosserial-arduino
@@ -250,6 +250,8 @@ gedit msg.h
 -- std::memcpy
 ++ memcpy
 ```
+
+## Step 8. Use arduino ultrasonic sensor
 
 >Check the result
 ```
