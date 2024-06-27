@@ -196,4 +196,6 @@ rqt_graph
 ```
 >You can see this picture
 
-![rqt (1)](https://github.com/SeungWoo3/jetracer/assets/78201406/65fb5368-630e-4887-8a2c-032221f1ac13)
+![342594126-65fb5368-630e-4887-8a2c-032221f1ac13](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/391f9b84-990a-43b2-90fd-6a25fab95f3c)
+
+
