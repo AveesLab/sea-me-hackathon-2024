@@ -200,4 +200,33 @@ rqt_graph
 
 ![342594126-65fb5368-630e-4887-8a2c-032221f1ac13](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/391f9b84-990a-43b2-90fd-6a25fab95f3c)
 
+## Step 7. Use arduino ultrasonic sensor
+1. install ros package
+```
+sudo apt install ros-melodic-rosserial rosmelodic-rosserial-arduino
+```
+2. download Arduino
+   
+https://downloads.arduino.cc/arduino-1.8.19-linuxaarch64.tar.xz?_gl=1*cef7fs*_ga*ODQ1NTYxNzQ4LjE3MTgyNjE2NDc.*_ga_NEXN8H46L5*MTcxODI2MTY0Ni4xLjEuMTcxODI2MjkzMS4wLjAuMTcwNDA3OTI1MA
 
+```
+unzip arduino-1.8.19-linuxaarch64
+sudo sh install.sh
+```
+
+>After connect arduino and Jetson nano, check connection
+```
+ls -l /dev/ttyACM0
+```
+
+
+authorize
+```bash
+sudo usermod -a -G dialout jetson
+sudo chmod a+rw /dev/ttyACM0
+```
+
+### check
+```bash
+roscore
+rosrun rosserial_python serial_node.py -port:=/dev/ttyACM0 _baud:=9600
