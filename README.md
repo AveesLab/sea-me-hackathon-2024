@@ -231,7 +231,8 @@ sudo usermod -a -G dialout jetson
 sudo chmod a+rw /dev/ttyACM0
 ```
 
-### check
-```bash
+>check the result
+```
 roscore
 rosrun rosserial_python serial_node.py -port:=/dev/ttyACM0 _baud:=9600
+```
