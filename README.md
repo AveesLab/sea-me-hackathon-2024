@@ -214,6 +214,7 @@ sudo apt install ros-melodic-rosserial rosmelodic-rosserial-arduino
 >Extract arduino-1.8.19-linuxaarch64.tar in Downloads directory
 
 ```
+cd ~/Downloads/arduino-1.8.19-linuxaarch64/arduino-1.8.19
 sudo sh install.sh
 ```
 
