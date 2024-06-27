@@ -239,6 +239,17 @@ arduino ultrasonic_ros.ino
 ![다운로드](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/ae8e9c9f-199f-4c23-8273-0b14bb9b94fd)
 ![4](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/04736dab-03c4-41ef-8e08-6f96812eacd4)
 
+>Fix the code
+```
+cd ~/Arduino/libraries/Rosserial_Arduino_Library/src/ros/msg.h
+```
+```
+-- #include <cstring>
+++ #include <string.h>
+-- std::memcpy
+++ memcpy
+```
+
 >Check the result
 ```
 roscore
