@@ -82,3 +82,60 @@ sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
 sudo apt update
 sudo apt upgrade
 ```
+
+## Step 4. Install ROS (melodic)
+http://wiki.ros.org/melodic/Installation/Ubuntu  
+
+1. Setup your sources.list
+```
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+```
+
+2. Set up your keys
+```
+sudo apt install curl
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+```
+
+3. Installation
+```
+sudo apt update   
+sudo apt install ros-melodic-desktop-full
+```
+
+4. Environment setup
+```
+echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+source /opt/ros/melodic/setup.bash
+```
+
+5. Dependencies for building packages
+>python 2.7
+```
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt install python-rosdep
+sudo rosdep init
+rosdep update
+```
+>python3(essential)
+```
+sudo apt install python3-pip python3-all-dev python3-rospkg
+sudo apt install ros-melodic-desktop-full --fix-missing
+```
+If you make a python ros package, you should add this line at the top of python script
+```python
+#!~/usr/bin/env python3
+```
+6. Create a ROS Workspace
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin_init_workspace
+cd ~/catkin_ws
+catkin_make
+```
+>python3 (optional)
+```
+catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
+```
