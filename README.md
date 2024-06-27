@@ -1,4 +1,4 @@
-# SEA:ME@Korea 2024 Summer Hackathon<br>
+# 2024 SEA:ME Hackathon<br>
 
 During this hackathon, your mission is to develop a autonomous driving system based on JetRacer Pro. We'll provide you an Nvidia Jetson nano embedded board. 
 
