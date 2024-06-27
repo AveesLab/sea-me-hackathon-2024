@@ -194,3 +194,5 @@ rosrun control control.py
 rosrun control actuator.py
 rqt_graph
 ```
+>You can see this picture
+![rqt (1)](https://github.com/SeungWoo3/jetracer/assets/78201406/65fb5368-630e-4887-8a2c-032221f1ac13)
