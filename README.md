@@ -139,3 +139,22 @@ catkin_make
 ```
 catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```
+
+## Step 5. Install ROS Packages
+### joy controller
+1. Check controller connection in https://hardwaretester.com/gamepad
+>#Waiting for connection
+![1](https://github.com/SeungWoo3/jetracer/assets/117966644/006ea758-bcf1-46fd-8e5c-c890bb4ee344)
+>#Connection successful
+![2](https://github.com/SeungWoo3/jetracer/assets/117966644/742b7db2-373e-4b68-85b1-b6b0e43f947b)
+
+2. Install the package & Run
+```
+sudo apt install ros-melodic-teleop-twist-joy
+rosrun joy joy_node
+```
+
+3. Check the ros topic
+```
+rostopic echo /joy
+```
