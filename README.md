@@ -241,7 +241,8 @@ arduino ultrasonic_ros.ino
 
 >Fix the code
 ```
-cd ~/Arduino/libraries/Rosserial_Arduino_Library/src/ros/msg.h
+cd ~/Arduino/libraries/Rosserial_Arduino_Library/src/ros
+gedit msg.h
 ```
 ```
 -- #include <cstring>
