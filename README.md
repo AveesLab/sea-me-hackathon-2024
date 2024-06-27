@@ -58,3 +58,27 @@ sudo gparted
 >Resize partition to maxsize
 
 ![3](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/1a451278-ae0e-4fa4-a956-d33571ff38c5)
+
+## Step 3. Fix the apt upgrade error
+```
+sudo apt update
+sudo apt upgrade
+```
+
+>If you see this error
+
+![apt_upgrade_error](https://github.com/SeungWoo3/jetracer/assets/78201406/5131c1a9-b7fd-421c-9ce1-b98dba039c8f)
+
+>Execute the lines below
+
+```
+sudo mv /var/lib/dpkg/info/ /var/lib/dpkg/info_old/
+sudo mkdir /var/lib/dpkg/info
+sudo apt update
+sudo apt -f install
+sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info_old/
+sudo rm -rf /var/lib/dpkg/info
+sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
+sudo apt update
+sudo apt upgrade
+```
