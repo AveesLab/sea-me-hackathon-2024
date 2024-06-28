@@ -129,6 +129,29 @@ catkin_make
 catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```
 
+## alias command setup
+```
+sudo gedit ~/.bashrc
+```
+>Add the below
+
+```
+++source ~/catkin_ws/devel/setup.bash
+++alias cw='cd ~/catkin_ws'
+++alias cs='cd ~/catkin_ws/src'
+++alias cm='cd ~/catkin_ws && catkin_make'
+++alias cb='source ~/catkin_ws/devel/setup.bash'
+++alias sb='source ~/.bashrc'
+```
+```
+source ~/.bashrc
+```
+>ROS packages build
+
+```
+cm
+```
+
 ## Step 5. Install ROS Packages
 ### Joy controller
 1. Check controller connection in https://hardwaretester.com/gamepad
@@ -220,7 +243,7 @@ gedit msg.h
 -- std::memcpy
 ++ memcpy
 ```
->Check the result
+## Step 8. Verification
 ```
 roscore
 roslaunch usb_cam usb_cam-test.launch
@@ -232,26 +255,3 @@ rosrun todo todo
 >You can see this picture
 
 ![rqt_graph](https://github.com/AveesLab/sea-me-hackathon-2024/assets/78201406/a55781e3-d396-42e0-a811-7b0e72f5938b)
-
-## alias command setup
-```
-sudo gedit ~/.bashrc
-```
->Add the below
-
-```
-++source ~/catkin_ws/devel/setup.bash
-++alias cw='cd ~/catkin_ws'
-++alias cs='cd ~/catkin_ws/src'
-++alias cm='cd ~/catkin_ws && catkin_make'
-++alias cb='source ~/catkin_ws/devel/setup.bash'
-++alias sb='source ~/.bashrc'
-```
-```
-source ~/.bashrc
-```
->ROS packages build
-
-```
-cm
-```
