@@ -1,28 +1,8 @@
-<<<<<<< HEAD
-# SEA:ME@Korea 2024 Summer Hackathon<br>
-
-During this hackathon, your mission is to develop a atonomous driving system based on JetRacer Pro. We'll provide you an Nvidia Jetson nano embedded board. 
-
-https://www.waveshare.com/wiki/JetRacer_Pro_AI_Kit
-
-
-## Step 0: Assemble your JetRacer Pro
-
-[https://files.waveshare.com/upload/f/fa/Jetracer_pro_Assembly_EN.pdf](https://files.waveshare.com/upload/f/fa/Jetracer_pro_Assembly_EN.pdf)
-
-
-
-## Step 1: Install Image
-1. Download the JetRacer image and unzip it.
-   
- [https://drive.google.com/file/d/1ZBdqrwhW2n1uN8rughF7Puw98o76kUcH/view?usp=sharing](https://drive.google.com/file/d/1ZBdqrwhW2n1uN8rughF7Puw98o76kUcH/view?usp=sharing)
-=======
 # 2024 SEA:ME Hackathon<br>
 
 During this hackathon, your mission is to develop a autonomous driving system based on JetRacer Pro. We'll provide you an Nvidia Jetson nano embedded board. 
 
 ![image](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/038d2832-94b0-416d-af1e-464430ddb012)
-
 
 https://www.waveshare.com/wiki/JetRacer_Pro_AI_Kit
 
@@ -41,26 +21,12 @@ https://github.com/balena-io/etcher/releases/download/v1.19.21/balenaEtcher-1.19
 
 3. Write the image using Etcher.
 
-<<<<<<< HEAD
-
-
-## Step 2: Initial setup
-1. Insert SD card to SD card slot of Jetson Nano (the slot is on the back of Jetson Nano module)
-```
-Picture?
-```
-2. Power on JetRacer AI Kit
-```
-Picture?
-```
-=======
 ![image](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/27d577d6-3ba9-4511-930e-979d170aa077)
 
 ## Step 2: Initial setup
 1. Insert SD card to SD card slot of Jetson Nano (the slot is on the back of Jetson Nano module)
 
 2. Power on JetRacer carrier board
->>>>>>> 1a13bb8345cf2c917ba39a2854cb7734fb38a365
 
 3. Connect WIFI
 
@@ -73,120 +39,7 @@ sudo reboot
 ```
 
 5. Configure Power Mode
-<<<<<<< HEAD
-```bash
-sudo nvpmodel -m1
-```
-<!--
-## Step 3: Install OpenCV
-1. Uninstall old version of OpenCV
-```bash
-sudo apt-get purge  libopencv* python-opencv
-sudo apt-get autoremove
-sudo find /usr/local/ -name "*opencv*" -exec rm -i {} \;
-```
 
-
-2. Install required libraries
-```bash
-sudo apt-get update
-sudo apt-get upgrade
-
-sudo apt-get -y install build-essential cmake
-sudo apt-get -y install pkg-config
-sudo apt-get -y install libjpeg-dev libtiff5-dev libpng-dev
-sudo apt-get -y install ffmpeg libavcodec-dev libavformat-dev libswscale-dev libxvidcore-dev libx264-dev libxine2-dev
-sudo apt-get -y install libv4l-dev v4l-utils
-sudo apt-get -y install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev 
-sudo apt-get -y install libgtk-3-dev
-sudo apt-get -y install mesa-utils libgl1-mesa-dri libgtkgl2.0-dev libgtkglext1-dev
-sudo apt-get -y install libatlas-base-dev gfortran libeigen3-dev
-sudo apt-get -y install python3-dev python3-numpy
-```
-
-3. Download OpenCV 4.4.0 source file
-```bash
-mkdir OpenCV && cd OpenCV
-git clone -b 4.4.0 https://github.com/opencv/opencv
-git clone -b 4.4.0 https://github.com/opencv/opencv_contrib
-cd opencv && mkdir build && cd build
-```
-
-4. Build OpenCV 4.4.0
-```bash
-cmake -D CMAKE_BUILD_TYPE=RELEASE \
--D CMAKE_INSTALL_PREFIX=/usr/local \
--D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
--D WITH_OPENCL=OFF \
--D WITH_CUDA=ON \
--D CUDA_ARCH_BIN=7.2 \
--D CUDA_ARCH_PTX="" \
--D WITH_CUDNN=ON \
--D WITH_CUBLAS=ON \
--D ENABLE_FAST_MATH=ON \
--D CUDA_FAST_MATH=ON \
--D OPENCV_DNN_CUDA=ON \
--D ENABLE_NEON=ON \
--D WITH_QT=OFF \
--D WITH_OPENMP=ON \
--D WITH_OPENGL=ON \
--D BUILD_TIFF=ON \
--D WITH_FFMPEG=ON \
--D WITH_GSTREAMER=ON \
--D WITH_TBB=ON \
--D BUILD_TBB=ON \
--D BUILD_TESTS=OFF \
--D WITH_V4L=ON \
--D WITH_LIBV4L=ON \
--D OPENCV_ENABLE_NONFREE=ON \
--D INSTALL_C_EXAMPLES=OFF \
--D INSTALL_PYTHON_EXAMPLES=OFF \
--D BUILD_NEW_PYTHON_SUPPORT=ON \
--D BUILD_opencv_python3=TRUE \
--D OPENCV_GENERATE_PKGCONFIG=ON \
--D BUILD_EXAMPLES=OFF \
-..
-```
-```bash
-sudo make install -j8
-```
-5. 0.2.2 Environment setup
->~~~
->sudo vim /usr/lib/pkgconfig/opencv.pc
->~~~
->-add the below
->~~~
-># Package Information for pkg-config
->prefix=/usr/local
->exec_prefix=${prefix}libdir=${exec_prefix}/lib/aarch64-linux-gnu
->includedir_old=${prefix}/include/opencv4/opencv
->includedir_new=${prefix}/include/opencv4
->
->Name: OpenCV
->Description: Open Source Computer Vision Library
->Version: 4.4.0
->Libs: -L${exec_prefix}/lib/aarch64-linux-gnu -lopencv_dnn -lopencv_gapi -lopencv_highgui -lopencv_ml -lopencv_objdetect -lopencv_photo -lopencv_stitching -lopencv_video -lopencv_calib3d -lopencv_features2d -lopencv_flann -lopencv_videoio -lopencv_imgcodecs -lopencv_imgproc -lopencv_core
->Libs.private: -ldl -lm -lpthread -lrt
->Cflags: -I${includedir_old} -I${includedir_new}
->~~~
-
-6. 0.2.3 Jetson Stats
->~~~
->sudo -H pip3 install jetson-stats
->jeson_release
->~~~
-
-7. 0.3.2 Environment setup
->-Setup the path
->~~~
->sudo cp -R /usr/local/lib/* /usr/lib
->~~~
-
--->
-## Step 3. apt update
-```bash
-=======
->You need to launch a new Terminal and enter the following commands to select 5W power mode.
 ```bash
 sudo nvpmodel -m1
 ```
@@ -225,7 +78,8 @@ sudo rm -rf /var/lib/dpkg/info
 sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
 sudo apt-get update
 sudo apt-get upgrade
-=======
+```
+
 >If you see this error
 
 ![apt_upgrade_error](https://github.com/SeungWoo3/jetracer/assets/78201406/5131c1a9-b7fd-421c-9ce1-b98dba039c8f)
@@ -242,12 +96,11 @@ sudo rm -rf /var/lib/dpkg/info
 sudo mv /var/lib/dpkg/info_old/ /var/lib/dpkg/info/
 sudo apt update
 sudo apt upgrade
->>>>>>> 1a13bb8345cf2c917ba39a2854cb7734fb38a365
 ```
 
 ## Step 4. Install ROS (melodic)
 http://wiki.ros.org/melodic/Installation/Ubuntu  
-<<<<<<< HEAD
+
 cd ~/catkin_ws/src
 1. Setup your sources.list
 >```
