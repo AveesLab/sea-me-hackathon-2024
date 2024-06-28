@@ -13,7 +13,6 @@ https://www.waveshare.com/wiki/JetRacer_Pro_AI_Kit
 1. Download the JetRacer image and unzip it.
 
 [https://drive.google.com/file/d/1ZBdqrwhW2n1uN8rughF7Puw98o76kUcH/view?usp=sharing]
->>>>>>> 1a13bb8345cf2c917ba39a2854cb7734fb38a365
 
 2. Download Etcher.
 
