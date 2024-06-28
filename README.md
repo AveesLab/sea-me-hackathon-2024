@@ -180,20 +180,16 @@ sudo gedit /opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake
 >Check the settings
 ```
 cd ~/catkin_ws/src
-git clone -b main https://github.com/SeungWoo3/jetracer.git
+git clone https://github.com/AveesLab/sea-me-hackathon-2024.git
 cd ../
 catkin_make
 ```
 ```
-roslaunch usb_cam usb_cam-test.launch
-rosrun lane_detect_image lane_detect_image_node
-rosrun control control.py
-rosrun control actuator.py
-rqt_graph
+roscore
+rosrun opencv_test opencv_test
 ```
->You can see this picture
 
-![342594126-65fb5368-630e-4887-8a2c-032221f1ac13](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/391f9b84-990a-43b2-90fd-6a25fab95f3c)
+
 
 ## Step 7. Use arduino ROS
 1. install ros package
@@ -249,5 +245,14 @@ gedit msg.h
 >Check the result
 ```
 roscore
+roslaunch usb_cam usb_cam-test.launch
 rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=9600
+rosrun rosrun joy joy_node
+rosrun control actuator
+rosrun todo todo
 ```
+
+
+>You can see this picture
+
+![rqt_graph](https://github.com/AveesLab/sea-me-hackathon-2024/assets/78201406/02d9166e-0458-40ce-acce-da8addc8f065)
