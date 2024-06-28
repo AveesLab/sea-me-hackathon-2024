@@ -136,7 +136,7 @@ catkin_make -DPYTHON_EXECUTABLE=/usr/bin/python3
 ```
 
 ## Step 5. Install ROS Packages
-### joy controller
+### Joy controller
 1. Check controller connection in https://hardwaretester.com/gamepad
 >#Waiting for connection
 
