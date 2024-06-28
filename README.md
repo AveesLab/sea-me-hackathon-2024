@@ -156,7 +156,7 @@ rosrun joy joy_node
 rostopic echo /joy
 ```
 
-### usb_cam
+### Usb camera
 ```
 sudo apt install ros-melodic-usb-cam
 ```
