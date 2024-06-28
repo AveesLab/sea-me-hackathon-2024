@@ -255,4 +255,5 @@ rosrun todo todo
 
 >You can see this picture
 
-![rqt_graph](https://github.com/AveesLab/sea-me-hackathon-2024/assets/78201406/02d9166e-0458-40ce-acce-da8addc8f065)
+![rqt_graph](https://github.com/AveesLab/sea-me-hackathon-2024/assets/78201406/a55781e3-d396-42e0-a811-7b0e72f5938b)
+
