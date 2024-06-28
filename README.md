@@ -246,8 +246,6 @@ gedit msg.h
 ++ memcpy
 ```
 
-## Step 8. Use arduino ultrasonic sensor
-
 >Check the result
 ```
 roscore
