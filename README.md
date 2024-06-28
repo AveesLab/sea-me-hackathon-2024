@@ -4,7 +4,7 @@ During this hackathon, your mission is to develop a autonomous driving system ba
 
 ![image](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/038d2832-94b0-416d-af1e-464430ddb012)
 
-[https://www.waveshare.com/wiki/JetRacer_Pro_AI_Kit
+https://www.waveshare.com/wiki/JetRacer_Pro_AI_Kit
 
 ## Step 0: Assemble your JetRacer Pro
 [Jetracer_pro_Assembly_EN.pdf](https://github.com/user-attachments/files/16007743/Jetracer_pro_Assembly_EN.pdf)
