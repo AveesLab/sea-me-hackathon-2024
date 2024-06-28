@@ -25,16 +25,8 @@ https://github.com/balena-io/etcher/releases/download/v1.19.21/balenaEtcher-1.19
 
 ## Step 2: Initial setup
 1. Insert SD card to SD card slot of Jetson Nano (the slot is on the back of Jetson Nano module)
-```
-Picture?
-```
 
 2. Power on JetRacer AI Kit
-```
-Picture?
-```
-
-#####ADD VNC remote control#####
 
 3. Connect WIFI
 
