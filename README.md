@@ -1,6 +1,6 @@
 # 2024 SEA:ME Hackathon<br>
 
-During this hackathon, your mission is to develop a autonomous driving system based on JetRacer Pro. We'll provide you an Nvidia Jetson nano embedded board. 
+During this hackathon, your mission is to develop a autonomous driving system based on JetRacer Pro. We'll provide you a Nvidia Jetson nano embedded board. 
 
 ![image](https://github.com/AveesLab/sea-me-hackathon-2024/assets/117966644/038d2832-94b0-416d-af1e-464430ddb012)
 
