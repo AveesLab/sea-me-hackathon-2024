@@ -249,7 +249,7 @@ roscore
 roslaunch usb_cam usb_cam-test.launch
 rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=9600
 rosrun rosrun joy joy_node
-rosrun control actuator
+rosrun control actuator.py
 rosrun todo todo
 ```
 >You can see this picture
