@@ -136,12 +136,12 @@ sudo gedit ~/.bashrc
 >Add the below
 
 ```
-++source ~/catkin_ws/devel/setup.bash
-++alias cw='cd ~/catkin_ws'
-++alias cs='cd ~/catkin_ws/src'
-++alias cm='cd ~/catkin_ws && catkin_make'
-++alias cb='source ~/catkin_ws/devel/setup.bash'
-++alias sb='source ~/.bashrc'
+++ source ~/catkin_ws/devel/setup.bash
+++ alias cw='cd ~/catkin_ws'
+++ alias cs='cd ~/catkin_ws/src'
+++ alias cm='cd ~/catkin_ws && catkin_make'
+++ alias cb='source ~/catkin_ws/devel/setup.bash'
+++ alias sb='source ~/.bashrc'
 ```
 ```
 source ~/.bashrc
