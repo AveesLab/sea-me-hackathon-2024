@@ -175,7 +175,7 @@ rostopic echo /joy
 ```
 sudo apt install ros-melodic-usb-cam
 ```
-## Step 6. Edit openCV settings
+## Step 6. Edit OpenCV settings
 ```
 sudo gedit /opt/ros/melodic/share/cv_bridge/cmake/cv_bridgeConfig.cmake
 ```
