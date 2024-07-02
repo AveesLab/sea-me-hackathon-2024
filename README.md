@@ -169,7 +169,7 @@ rosrun joy joy_node
 ```
 3. Check the ros topic
 ```
-rostopic echo /joy
+rostopic echo /Joy
 ```
 ### Usb camera
 ```
